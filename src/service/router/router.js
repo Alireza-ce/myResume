@@ -22,7 +22,7 @@ export const routing = (
         <Route exact path="/myResume" component={Resume} />
         <Route path="/login" component={Login} />
         <Private restricted component={Manager} path="/managers" exact />
-        <Route path="*" component={Resume} />
+        <Route path="*" component={NoMatch} />
       </Switch>
     </Router>
   </Provider>
