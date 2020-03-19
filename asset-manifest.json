@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9d3250d.chunk.css",
-    "main.js": "/static/js/main.a7a2b207.chunk.js",
-    "main.js.map": "/static/js/main.a7a2b207.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.32701d3a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.32701d3a.js.map",
-    "static/css/2.5dbdccff.chunk.css": "/static/css/2.5dbdccff.chunk.css",
-    "static/js/2.af7242f7.chunk.js": "/static/js/2.af7242f7.chunk.js",
-    "static/js/2.af7242f7.chunk.js.map": "/static/js/2.af7242f7.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d9f185a4a16afe2542e107cdb860da7a.js": "/precache-manifest.d9f185a4a16afe2542e107cdb860da7a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.5dbdccff.chunk.css.map": "/static/css/2.5dbdccff.chunk.css.map",
-    "static/css/main.a9d3250d.chunk.css.map": "/static/css/main.a9d3250d.chunk.css.map",
-    "static/js/2.af7242f7.chunk.js.LICENSE.txt": "/static/js/2.af7242f7.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/Iceland-Regular.85ac02da.ttf",
-    "static/media/me.png": "/static/media/me.163f34ac.png",
-    "static/media/wall.jpg": "/static/media/wall.7abd1924.jpg"
+    "main.css": "/myResume/static/css/main.602e3dd3.chunk.css",
+    "main.js": "/myResume/static/js/main.a7a2b207.chunk.js",
+    "main.js.map": "/myResume/static/js/main.a7a2b207.chunk.js.map",
+    "runtime-main.js": "/myResume/static/js/runtime-main.b3001f75.js",
+    "runtime-main.js.map": "/myResume/static/js/runtime-main.b3001f75.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/myResume/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.af7242f7.chunk.js": "/myResume/static/js/2.af7242f7.chunk.js",
+    "static/js/2.af7242f7.chunk.js.map": "/myResume/static/js/2.af7242f7.chunk.js.map",
+    "index.html": "/myResume/index.html",
+    "precache-manifest.d8f92ec5e126e484d3a80b1a64019f04.js": "/myResume/precache-manifest.d8f92ec5e126e484d3a80b1a64019f04.js",
+    "service-worker.js": "/myResume/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/myResume/static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.602e3dd3.chunk.css.map": "/myResume/static/css/main.602e3dd3.chunk.css.map",
+    "static/js/2.af7242f7.chunk.js.LICENSE.txt": "/myResume/static/js/2.af7242f7.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/myResume/static/media/Iceland-Regular.85ac02da.ttf",
+    "static/media/me.png": "/myResume/static/media/me.163f34ac.png",
+    "static/media/wall.jpg": "/myResume/static/media/wall.7abd1924.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.32701d3a.js",
+    "static/js/runtime-main.b3001f75.js",
     "static/css/2.5dbdccff.chunk.css",
     "static/js/2.af7242f7.chunk.js",
-    "static/css/main.a9d3250d.chunk.css",
+    "static/css/main.602e3dd3.chunk.css",
     "static/js/main.a7a2b207.chunk.js"
   ]
 }
