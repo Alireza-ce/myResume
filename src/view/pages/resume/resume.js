@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './resumeStyle';
 import Introduce from '../../components/introduce/introduce';
+import AboutMe from '../../components/about-me/aboutMe'; 
 
 function Resume() {
   return (
@@ -9,9 +10,9 @@ function Resume() {
       <section id="introduce">
         <Introduce />
       </section>
-      {/* <section id="about-me">
-        <h2>chetori</h2>
-      </section> */}
+      <section id="about-me">
+        <AboutMe />
+      </section>
     </div>
   );
 }

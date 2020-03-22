@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import CallLogo from './call';
 import Gmail from './gmail';
-import './introduce.css';
+import Icons from './icons';
 import styles from './introduceStyle';
 import image from '../../../assets/me.png';
 
@@ -18,30 +18,30 @@ function Introduce(props) {
     <div id="main" className={classes.root}>
       <div className={classes.card}>
         <div className={classes.content}>
-          <p className={classes.hello}>hello</p>
-          <p className={classes.name}>
+          <p className={`animated ${classes.hello} fadeInLeft `}>Hello</p>
+          <p className={`animated ${classes.name} fadeInRight `}>
             I'm  Ali Reza Rezaei
 
           </p>
-          <p className={classes.developer}>
+          <p className={`animated ${classes.developer} flash `}>
             Front End Developer
           </p>
-          <div className={classes.contact}>
+          <div className={`animated ${classes.contact} fadeInUp `}>
             <CallLogo />
             <p className={classes.info}>+98 939 596 6186</p>
 
           </div>
-          <div className={classes.contactMail}>
+          <div className={`animated ${classes.contactMail} fadeInUp `}>
             <Gmail />
             <p className={classes.info}>rezaei.alireza.ce@gmail.com</p>
           </div>
           <div>
-            <ul>
+            <Icons className="animated fadeInDown" >
               <li><a href="www.varzesh3.com"><i className="fa fa-paper-plane" aria-hidden="true" /></a></li>
               <li><a href="#"><i className="fa fa-gitlab" aria-hidden="true" /></a></li>
               <li><a href="#"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
               <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-            </ul>
+            </Icons>
           </div>
 
         </div>
