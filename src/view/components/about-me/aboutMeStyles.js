@@ -41,6 +41,11 @@ export const Info = styled.div`
     justify-content:center;
     font-family: cursive;
     color: #F8F8F8;
+    @media (max-width: 768px) {
+        grid-row-start: 1;
+  grid-row-end: 2;
+ 
+    } 
 `;
 
 export const Animation = styled.div`

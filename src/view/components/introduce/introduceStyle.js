@@ -50,8 +50,6 @@ export const styles = {
     height: '60%',
     zIndex:1,
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      width:'50%',
-      height: '50%',
       paddingLeft:64,
     },
   },
