@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import Lottie from 'react-lottie';
 import {
   Main, LeftDiv, Card, Info, P, Animation, H1,
@@ -6,7 +6,11 @@ import {
 import animationData from './character.json';
 
 
-function aboutMe(props) {
+function AboutMe(props) {
+  const [header, setHeader]= useState('')
+  useEffect(() => {  
+    setHeader("About Me")
+  });
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -27,7 +31,7 @@ function aboutMe(props) {
           />
         </Animation>
         <Info>
-          <H1>About Me</H1>
+          <H1>{header}</H1>
           <P>
             When I started studying in college, I realized my most favorite field in computer is front-end development.
             Since then, I started experiencing different technologies in this field. I'm passionate and advanterous and I work hard for things that I love.
@@ -38,4 +42,4 @@ function aboutMe(props) {
   );
 }
 
-export default aboutMe;
+export default AboutMe;

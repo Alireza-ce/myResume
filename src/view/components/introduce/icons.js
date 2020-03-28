@@ -22,9 +22,6 @@ const Icons = styled.ul`
         box-shadow: 0 10px 15px rgb(0, 0, 0,0.3);
         transition: 0.5s;
     }
-    &:hover a{
-        box-shadow: 0 2px 5px rgb(0, 0, 0,0.3);
-    }
 
     li a .fa{
         width: 100%;
@@ -34,7 +31,7 @@ const Icons = styled.ul`
         border-radius: 50%;
         line-height: calc(40px - 16px);
         font-size: 16px;
-        color: #262626;
+        color: #173D7A;
         transition: 0.5s;
     }
     .fa-paper-plane {

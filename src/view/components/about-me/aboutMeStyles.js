@@ -6,21 +6,26 @@ export const Main = styled.div`
     display:flex;
     align-items:center;
     justify-content: center;
-    background: #080825;
+    background: linear-gradient(to left,#15DBD6,#1AEFDE);
+    @media (max-width: 768px) {
+        background:#F8F8F8;
+    }
 
 `;
 
 export const Card = styled.div`
     width: 80%;
     min-height: 200px;
-    background: #080825;
+    background:linear-gradient(to right,#1AEFDE,#0DB5C8);
     display: grid;
     grid-template-columns: auto auto;
     z-index: 1;
-    box-shadow: 0px 0px 5px 1px #F8F8F8;
+    box-shadow: 0px 0px 5px 1px #1AEFDE;
+    margin-bottom: 16px;
     @media (max-width: 768px) {
         grid-template-columns: auto ;
         width: 50%;
+        box-shadow: 0px 0px 5px 1px  #ffffff;
     }   
     @media (max-width: 480px) {
         width: 80%;
@@ -41,7 +46,7 @@ export const Animation = styled.div`
     padding: 32px 64px 32px 64px;
     
     @media (max-width: 768px) {
-        background:  #F8F8F8;
+    background:  #F8F8F8;
     box-shadow: 0px 0px 2px #F8F8F8;
     padding: 32px 0px 32px 0px;
     }

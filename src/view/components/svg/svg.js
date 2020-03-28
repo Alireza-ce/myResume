@@ -21,13 +21,17 @@ const anim = keyframes`
 
 const Svg = styled.svg`
 width:  50px;
+@media (max-width: 768px) {
+    width:  42px;
+}
 
 path{
-    stroke-width: ${(props) => props.strokeWidht || '10px'};
+    stroke-width: ${(props) => props.strokeWidth || '10px'};
     stroke:transparent;
     stroke-dasharray: 1360;
     stroke-dashoffset: 0;
 }
+
 &:hover path {
   animation: ${anim} 2s linear forwards;
 }
