@@ -24,6 +24,7 @@ export const Card = styled.div`
     margin-bottom: 16px;
     @media (max-width: 768px) {
         grid-template-columns: auto ;
+        background:linear-gradient(to top,#1AEFDE,#0DB5C8);
         width: 50%;
         box-shadow: 0px 0px 5px 1px  #ffffff;
     }   
@@ -46,8 +47,6 @@ export const Animation = styled.div`
     padding: 32px 64px 32px 64px;
     
     @media (max-width: 768px) {
-    background:  #F8F8F8;
-    box-shadow: 0px 0px 2px #F8F8F8;
     padding: 32px 0px 32px 0px;
     }
 `;

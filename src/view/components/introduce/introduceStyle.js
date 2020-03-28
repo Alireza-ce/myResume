@@ -1,5 +1,6 @@
 import Image from './wall.jpg';
 import PhoneBackground from './wall_phone.png';
+import { nominalTypeHack } from 'prop-types';
 
 export const styles = {
   root: {
@@ -7,7 +8,11 @@ export const styles = {
     minHeight: '100vh',
     background:'#F8F8F8',
   },
+  backImg:{
+    display:'none',
+  },
   card: {
+    
     display: 'flex',
     width: '100%',
     justifyContent: 'center',
@@ -20,6 +25,7 @@ export const styles = {
     },
   },
   content: {
+    position:'relative',
     padding:16,
     borderRadius: '4px',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
@@ -36,15 +42,22 @@ export const styles = {
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       marginTop:16,
       marginBottom:16,
+      
     },
   },
   image: {
     width:'60%',
     height: '60%',
     zIndex:1,
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      width:'50%',
+      height: '50%',
+      paddingLeft:64,
+    },
   },
   container : {
     display: 'grid',
+    position:'relative',
     width: '100%',
     'grid-template-columns': '50% 50%',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key

@@ -49,6 +49,7 @@ const Introduce = (props) => {
       <div className={classes.container}>
       <div className={classes.card}>
         <div className={classes.content} ref={el => (content = el)} >
+       
           <p className={` ${classes.hello} `} ref={el => (box = el)}>Hi</p>
           <div>
           <p className={`alireza ${classes.name} `} ref={el => (name = el)} >
