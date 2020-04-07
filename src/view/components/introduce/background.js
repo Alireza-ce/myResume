@@ -12,7 +12,7 @@ const Svg = styled.svg`
       right:unset;
    }
    @media (max-width: 768px) {
-      right:0;
+      right: -22px;
    }
    @media (max-width: 768px) {
 	.st0{

@@ -1,75 +1,81 @@
+import { nominalTypeHack } from 'prop-types';
 import Image from './wall.jpg';
 import PhoneBackground from './wall_phone.png';
-import { nominalTypeHack } from 'prop-types';
 
 export const styles = {
   root: {
     display: 'flex',
     minHeight: '100vh',
-    background:'#F8F8F8',
+    background: '#F8F8F8',
   },
-  backImg:{
-    display:'none',
+  backImg: {
+    display: 'none',
+  },
+  backInfo: {
+    position: 'absolute',
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      width:'85%',
+    },
   },
   card: {
-    
+
     display: 'flex',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingLeft:100,
+    paddingLeft: 100,
     'z-index': 2,
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      marginTop:32,
-      paddingLeft:0,
+      marginTop: 32,
+      paddingLeft: 0,
     },
   },
   content: {
-    position:'relative',
-    padding:16,
+    position: 'relative',
+    padding: 16,
     borderRadius: '4px',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      marginTop:32
+      marginTop: 32,
     },
-  
+
   },
-  imageDiv:{
+  imageDiv: {
     display: 'flex',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      marginTop:16,
-      marginBottom:16,
-      
+      marginTop: 16,
+      marginBottom: 16,
+
     },
   },
   image: {
-    width:'60%',
+    width: '60%',
     height: '60%',
-    zIndex:1,
+    zIndex: 1,
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      paddingLeft:64,
+      paddingLeft: 64,
     },
   },
-  container : {
+  container: {
     display: 'grid',
-    position:'relative',
+    position: 'relative',
     width: '100%',
     'grid-template-columns': '50% 50%',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       'grid-template-columns': '100%',
     },
   },
-  
+
   hello: {
     marginTop: 12,
     'font-size': 45,
     paddingLeft: 16,
     color: '#0BA8C3',
-    opacity:0,
-    y:-10,
+    opacity: 0,
+    y: -10,
     fontFamily: 'Audiowide', //  Iceland
     fontWeight: 'bold',
     textShadow: '0 0 65px #fff, 0 0 3px #228DFF',
@@ -92,7 +98,7 @@ export const styles = {
       'font-size': 32,
       marginTop: -28,
     },
-    
+
   },
   developer: {
     fontSize: 16,
@@ -126,4 +132,3 @@ export const styles = {
     fontWeight: 'bold',
   },
 };
-

@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Lottie from 'react-lottie';
 import {
   Main, LeftDiv, Card, Info, P, Animation, H1,
@@ -7,10 +7,13 @@ import animationData from './character.json';
 
 
 function AboutMe(props) {
-  const [header, setHeader]= useState('')
-  useEffect(() => {  
-    setHeader("About Me")
+  const hi = (name) => console.log(name);
+  const [header, setHeader] = useState('');
+  useEffect(() => {
+    setHeader('About Me');
+    hi('ali');
   });
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -19,6 +22,7 @@ function AboutMe(props) {
       preserveAspectRatio: 'xMidYMid meet',
     },
   };
+
 
   return (
     <Main id="main">
