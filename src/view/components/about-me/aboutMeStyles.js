@@ -22,6 +22,8 @@ export const Card = styled.div`
     z-index: 1;
     box-shadow: 0px 0px 5px 1px #1AEFDE;
     margin-bottom: 16px;
+    opacity: 0;
+    scale: .8;
     @media (max-width: 768px) {
         grid-template-columns: auto ;
         background:linear-gradient(to top,#1AEFDE,#0DB5C8);

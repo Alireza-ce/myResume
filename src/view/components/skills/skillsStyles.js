@@ -30,6 +30,7 @@ export const Card = styled.div`
     align-items: center;
     margin-top: 4px;
     width: 150px;
+    opacity:0;
     @media (max-width: 768px) {
        width: 100px;
     }  
