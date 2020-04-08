@@ -13,8 +13,12 @@ export const styles = {
   },
   backInfo: {
     position: 'absolute',
+    top: 0,
+    right: 0,
+    display: 'none',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      width:'85%',
+      display: 'block',
+      opacity: .9,
     },
   },
   card: {
@@ -53,11 +57,7 @@ export const styles = {
   },
   image: {
     width: '60%',
-    height: '60%',
     zIndex: 1,
-    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      paddingLeft: 64,
-    },
   },
   container: {
     display: 'grid',

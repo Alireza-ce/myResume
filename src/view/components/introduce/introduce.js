@@ -83,6 +83,7 @@ const Introduce = (props) => {
   return (
     <div id="main" className={classes.root}>
       <div className={classes.container}>
+      <img className={classes.backInfo} ref={(el) => (bg = el)} src={require('./backinfo.png')} alt="front end developer" />
         <div className={classes.card}>
           <div className={classes.content} ref={(el) => (content = el)}>
 
