@@ -1,4 +1,4 @@
-import styled, { keyframes }  from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 
 const anim = keyframes`
@@ -34,14 +34,14 @@ export const Main = styled.div`
     position:relative;
     display:flex;
     background: #F8F8F8;
-  flex-direction:column;
+    flex-direction:column;
 `;
-export const Time = styled.div `
+export const Time = styled.div`
     font-family: Iceland;
     transition-delay: .1s;
 `;
 
-export const TimeLine = styled.div `
+export const TimeLine = styled.div`
 position:relative;
 margin:18px auto;
 padding: 40px 0;
@@ -69,7 +69,7 @@ box-sizing: border-box;
     
 `;
 
-export const Company = styled.div `
+export const Company = styled.div`
    display:flex;
    margin: 0;
    font-family:"Baloo Da 2";
@@ -89,18 +89,18 @@ export const Company = styled.div `
    }
 `;
 
-export const Ul = styled.ul `
+export const Ul = styled.ul`
 margin: 0;
 padding: 0;
 `;
 
-export const BoxLottie = styled.div `
+export const BoxLottie = styled.div`
     position: absolute;
     top:50px;
     display:none;
         `;
 
-export const Li = styled.li `
+export const Li = styled.li`
 list-style: none;
 position: relative;
 margin-top:4px;
@@ -234,7 +234,7 @@ box-sizing: border-box;
 }
 `;
 
-export const H3 = styled.h3 `
+export const H3 = styled.h3`
 font-family:"Baloo Da 2";
 margin: 0;
 padding: 0;
@@ -246,7 +246,7 @@ ${Li}:hover & {
 }
 `;
 
-export const P = styled.p `
+export const P = styled.p`
 font-family:"Baloo Da 2";
 margin: 10px 0 0;
 padding: 0;
@@ -256,7 +256,7 @@ ${Li}:hover & {
 }
 `;
 
-export const Content = styled.div `
+export const Content = styled.div`
     padding:8px 16px 16px 8px;
     border-radius:18px;
     transition-delay:.1s;
@@ -267,7 +267,7 @@ export const Content = styled.div `
 `;
 
 
-export const H1 = styled.h1 `
+export const H1 = styled.h1`
 position: relative;
 text-align:center;
 font-family:"Baloo Da 2";
@@ -287,5 +287,3 @@ export const Image = styled.img`
     height: 30px;
     padding:8px
 `;
-
-

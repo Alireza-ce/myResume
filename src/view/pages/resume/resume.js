@@ -18,9 +18,9 @@ function Resume() {
       <section id="timeline">
         <Timeline />
       </section>
-      {/* <section id="skills">
+      <section id="skills">
         <Skills />
-      </section> */}
+      </section>
     </div>
   );
 }
