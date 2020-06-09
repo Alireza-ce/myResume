@@ -7,7 +7,7 @@ const Svg = styled.svg`
 	top:0;
 	right:0;
 	height:100%;
-	opacity:1;
+	opacity:.8;
 	@media (max-width: 1000px) {
       right:unset;
    }
@@ -23,12 +23,7 @@ const background = forwardRef((props, ref) => {
   let sPath = useRef(null);
   let fPath = useRef(null);
   const tl = gsap.timeline();
-  useEffect(() => {
-    tl.from(sPath, {
-      y: 100, duration: 2, opacity: 0, delay: 3,
-    })
-      .from(fPath, { opacity: 0, duration: 1 }, '-=3');
-  }, []);
+
   return (
     <Svg
       ref={ref}

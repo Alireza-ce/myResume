@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable global-require */
+/* eslint-disable no-return-assign */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
@@ -6,10 +9,9 @@ import React, { useRef, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import { gsap, Elastic } from 'gsap/all';
-import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import CallLogo from './call';
 import Gmail from './gmail';
-import Icons from './icons';
+import { Icons } from './icons';
 import Background from './background';
 import { styles } from './introduceStyle';
 
@@ -29,61 +31,62 @@ const Introduce = (props) => {
   useEffect(() => {
     tl.to(box, {
       y: 0,
+      delay: 1,
       duration: 1,
       opacity: 1,
-      delay: 1,
       ease:
        Elastic.easeOut.config(2, 0.8),
     })
-      .from(name, {
-        y: 20,
+      .to(name, {
+        y: 0,
         duration: 1,
-        opacity: 0,
-        delay: 1,
+        opacity: 1,
         ease:
         Elastic.easeOut.config(1, 0.8),
       }, '-=.5')
-      .from(job, {
-        y: 20,
+      .to(job, {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         ease:
           Elastic.easeOut.config(1, 0.8),
       }, '-=.5')
-      .from(call, {
-        y: 20,
+      .to(call, {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         ease:
               Elastic.easeOut.config(1, 0.8),
       })
-      .from(gmail, {
-        y: 20,
+      .to(gmail, {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         ease:
                 Elastic.easeOut.config(1, 0.8),
       }, '-=.5')
-      .from(icons, {
-        y: 20,
+      .to(icons, {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         ease:
                   Elastic.easeOut.config(1, 0.8),
       }, '-=.5')
-      .from(bg, {
-        y: 100,
+      .to(bg, {
+        y: 0,
         duration: 2,
-        opacity: 0,
-        scale: 0,
+        opacity: 1,
+        scale: 1,
         ease:
             Elastic.easeOut.config(1, 0.8),
       }, '-=2');
   });
+
+
   return (
-    <div id="main" className={classes.root}>
+    <div  className={classes.root}>
       <div className={classes.container}>
-      <img className={classes.backInfo} ref={(el) => (bg = el)} src={require('./backinfo.png')} alt="front end developer" />
+        <img className={classes.backInfo} ref={(el) => (bg = el)} src={require('./backinfo.png')} alt="front end developer" />
         <div className={classes.card}>
           <div className={classes.content} ref={(el) => (content = el)}>
 
@@ -108,9 +111,9 @@ const Introduce = (props) => {
             </div>
             <div>
               <Icons ref={(el) => (icons = el)}>
-                <li><a href="www.varzesh3.com"><i className="fa fa-paper-plane" aria-hidden="true" /></a></li>
-                <li><a href="#"><i className="fa fa-gitlab" aria-hidden="true" /></a></li>
-                <li><a href="#"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
+                <li><a href="https://t.me/Alirezai19"><i className="fa fa-paper-plane" aria-hidden="true" /></a></li>
+                <li><a href="https://gitlab.com/AlirezaRezaei"><i className="fa fa-gitlab" aria-hidden="true" /></a></li>
+                <li><a href="https://linkedin.com/in/alireza-rezaei-ce"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
                 <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
               </Icons>
             </div>

@@ -33,7 +33,7 @@ export const Svg = styled.svg`
 export const Main = styled.div`
     position:relative;
     display:flex;
-    background: #F8F8F8;
+    background: #f3f4f6;
     flex-direction:column;
 `;
 export const Time = styled.div`
@@ -117,7 +117,6 @@ box-sizing: border-box;
     }
             ${Time} {
             background: #0DB6C8;
-            box-shadow: 0 0 0 2px rgb(13,182,200);
         }
         &::before{
         background: #18E4DA;
@@ -258,11 +257,12 @@ ${Li}:hover & {
 
 export const Content = styled.div`
     padding:8px 16px 16px 8px;
-    border-radius:18px;
+    border-radius:15px;
     transition-delay:.1s;
     ${Li}:hover  &{
         background: #F5F5F5;
-        box-shadow:2px 2px 0 1px rgba(201,201,255,0.3);
+        box-shadow:-15px -15px 15px rgba(255,255,255,.4),
+        10px 10px 15px rgba(0,0,0,0.3);
     }
 `;
 

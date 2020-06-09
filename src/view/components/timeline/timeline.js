@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
+import React from 'react';
 import Lottie from 'react-lottie';
 import {
   Main, Ul, Li, Content, Time, TimeLine, H3, P, Company, H1, Image, BoxLottie,
@@ -86,7 +88,10 @@ function Timeline(props) {
                 />
               </BoxLottie>
               <P>
-                I was in charge of implementing the front side of a data management system used by doctors in hospital research centers all over Iran. The goal was to create a system that could easily be used by doctors who do not know how to use new technologies very well.
+                I was in charge of implementing the front side of a
+                data management system used by doctors in hospital research centers all over Iran.
+                The goal was to create a system that could easily be used by doctors who do not know
+                how to use new technologies very well.
               </P>
               {imagesDaft('daft')}
             </Content>
@@ -111,7 +116,12 @@ function Timeline(props) {
                 />
               </BoxLottie>
               <P>
-                Devloped the front-end and also the back-end of two seperate applications which tracked the location of the employees in the company while they were on duty. The first application was used by the employee and the other one was used by the company's manager.
+                Devloped the front-end and
+                also the back-end of two seperate applications which tracked the
+                location of the employees in the company while they were on duty. The
+                first application was used by the employee and the other one was used
+                by the company's
+                manager.
               </P>
               {imagesDaft('it')}
             </Content>

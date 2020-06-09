@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
+/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect, useRef } from 'react';
 import Lottie from 'react-lottie';
-import { gsap, Elastic } from 'gsap/all';
+import { gsap } from 'gsap/all';
 import { useIntersection } from 'react-use';
 import {
   Main, LeftDiv, Card, Info, P, Animation, H1,
@@ -17,8 +19,8 @@ function AboutMe(props) {
   });
 
   intersection && intersection.intersectionRatio < 0.5
-    ? gsap.to('.card', { opacity: 0,scale:0.8, duration: 1 })
-    : gsap.to('.card', { opacity: 1,scale:1, duration: 1 });
+    ? gsap.to('.card', { opacity: 0, scale: 0.8, duration: 1 })
+    : gsap.to('.card', { opacity: 1, scale: 1, duration: 1 });
 
   const hi = (name) => console.log(name);
   const [header, setHeader] = useState('');
@@ -38,16 +40,16 @@ function AboutMe(props) {
 
 
   return (
-    <Main id="main" ref={mainRef} >
+    <Main id="main" ref={mainRef}>
       <LeftDiv />
-      <Card className="card">
-        <Animation>
+      <Card>
+        <Animation className="card">
           <Lottie
             options={defaultOptions}
             width="80%"
           />
         </Animation>
-        <Info>
+        <Info className="card">
           <H1>{header}</H1>
           <P>
             When I started studying in college, I realized my most favorite field in computer is front-end development.

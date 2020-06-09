@@ -1,7 +1,5 @@
-import { nominalTypeHack } from 'prop-types';
-import Image from './wall.jpg';
-import PhoneBackground from './wall_phone.png';
-
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-dupe-keys */
 export const styles = {
   root: {
     display: 'flex',
@@ -18,7 +16,7 @@ export const styles = {
     display: 'none',
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       display: 'block',
-      opacity: .9,
+      opacity: 0.9,
     },
   },
   card: {
@@ -58,6 +56,8 @@ export const styles = {
   image: {
     width: '60%',
     zIndex: 1,
+    opacity: 0,
+    transform: 'translateY(20px) scale(0)',
   },
   container: {
     display: 'grid',
@@ -76,21 +76,22 @@ export const styles = {
     color: '#0BA8C3',
     opacity: 0,
     y: -10,
-    fontFamily: 'Audiowide', //  Iceland
+    fontFamily: 'Courgette', //  Iceland
     fontWeight: 'bold',
-    textShadow: '0 0 65px #fff, 0 0 3px #228DFF',
+
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       'font-size': 36,
     },
   },
   name: {
-    fontFamily: 'Iceland', //  Iceland
+    transform: 'translateY(20px)',
+    opacity: 0,
+    fontFamily: 'Lobster', //  Iceland
     'font-size': 54,
     paddingLeft: 24,
     color: '#017AB1',
     fontWeight: 'bold',
     marginTop: -42,
-    textShadow: '0 0 1px #fff, 0 0px #fff, 0 0 1px #fff, 0 0 2px #228DFF, 0 0px #228DFF, 0 0px #228DFF, 0 0px #228DFF, 0 0px #228DFF',
     ['@media (max-width:1000px)']: { // eslint-disable-line no-useless-computed-key
       'font-size': 42,
     },
@@ -107,6 +108,8 @@ export const styles = {
     paddingLeft: 24,
     color: '#0BA8C3',
     fontWeight: 'bold',
+    transform: 'translateY(20px)',
+    opacity: 0,
     // font-family: 'Bubblegum Sans', Pacifico,
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       marginTop: -32,
@@ -114,11 +117,15 @@ export const styles = {
   },
   contactMail: {
     marginTop: 8,
+    transform: 'translateY(20px)',
+    opacity: 0,
     color: '#0BA8C3',
     display: 'flex',
     paddingLeft: 24,
   },
   contact: {
+    transform: 'translateY(20px)',
+    opacity: 0,
     marginTop: 42,
     display: 'flex',
     color: '#0BA8C3',

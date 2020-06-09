@@ -1,9 +1,54 @@
 import styled from 'styled-components';
 
-const Icons = styled.ul`
+export const Hamburger = styled.div`
+    cursor:pointer;
+    z-index: 1000;
+    position: absolute;
+    width:20px;
+    height:10px;
+    top: 32px;
+    left: 32px;
+    :hover{
+        .hamburger{
+            width: 20px;
+                ::before,::after{
+                    width: 16px;
+            }
+        }
+      
+    }
+    .hamburger{
+        width: 16px;
+        height: 2px;
+        background: #17E2D9;
+        transition: width .2s;
+            ::before , ::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: #0AA2C1;
+                transition: width .2s;
+    }
+
+    ::before{
+        bottom: 12px;
+    }
+
+    ::after{
+        top: 4px ;
+    }
+    }
+
+
+`;
+
+export const Icons = styled.ul`
     margin-top: 24px;
     padding-left: 24px;
     display: flex;
+    transform: translateY(20px);
+    opacity: 0;
     li{
     list-style: none;
     }
@@ -50,5 +95,3 @@ const Icons = styled.ul`
         color:  #FC6D27;
     }
 `;
-
-export default Icons;
