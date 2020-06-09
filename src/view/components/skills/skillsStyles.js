@@ -39,6 +39,10 @@ export const Card = styled.div`
         10px 10px 15px rgba(0,0,0,0.3);
     @media (max-width: 768px) {
        width: 100px;
+       margin-left:4px;
+    margin-right:4px;
+    box-shadow:-4px -4px 4px rgba(255,255,255,.3),
+        4px 4px 4px rgba(0,0,0,0.3);
     }  
 `;
 
